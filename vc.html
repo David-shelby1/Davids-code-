@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic HTML Layout</title>
+<style>
+    *   { 
+         box-sizing: border-box; }
+         header, footer {
+            background: rgb(22, 134, 172); 
+            text-align: center; padding: 10px; }
+            nav { float: left; width: 25%; background: #49a33d; padding: 15px; height: 300px; }
+            article { float: left; width: 75%; background: #8b1a1a; padding: 15px; height: 300px; }
+            section::after { content: ""; display: table; clear: both; 
+        }
+</style>
+</head>
+
+<body>
+<header>
+<h1>David Nav</h1>
+</header>
+
+<section>
+<nav>
+<ul>
+<li><a href="#">Cedars</a></li>
+<li><a href="#">Frontend Development</a></li>
+<li><a href="#">Coding</a></li>
+</ul>
+</nav>
+
+<article>
+<h2>Welcome</h2>
+<p>Need Help With Your Main</p>
+</article>
+</section>
+
+<footer>
+<p>© 2026 My Website</p>
+</footer>
+
+</body>
+</html>
